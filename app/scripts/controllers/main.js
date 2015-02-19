@@ -22,7 +22,6 @@ angular.module('app')
       'Karma'
     ];
 
-console.log($scope.search);
 
 
   }]);

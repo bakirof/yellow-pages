@@ -1,0 +1,25 @@
+
+
+
+<div class="col-xs-12 place" data-ng-repeat="place in places">
+  <div class="col-xs-4 place-image"><img data-ng-src="{{place.imageUrl}}" class="img-responsive"></div>
+  <div class="col-xs-8 place-desc">
+    <div class="col-xs-12 place-name">
+      {{place.placeName}}
+    </div>
+    <div class="col-xs-2 assessment">
+      {{place.rating}}
+    </div>
+    <div class="col-xs-4 h-work">
+      Часы работы: <br><span>{{place.hours}}</span>
+    </div>
+    <div class="col-xs-6 place-adres">
+      Адрес: <br><span>{{place.adres}}</span>
+    </div>
+    <div class="col-xs-12 place-description">
+      {{place.description}}
+    </div>
+  </div>
+</div>
+
+

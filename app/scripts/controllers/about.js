@@ -10,6 +10,6 @@
 angular.module('app')
   .controller('AboutCtrl', ['$scope', 'test',
     function ($scope, test) {
-    console.log(  $scope.ok=test.query({db:'mydb', collection:'testData'}));
+    $scope.ok=test.query({db:'mydb', collection:'testData'});
 
     }]);

@@ -16,21 +16,45 @@ angular
     'ngResource',
     'ngRoute',
     'ngSanitize',
-    'ngTouch'
+    'ngTouch',
+    'ui.router'
   ])
-  .config(['$routeProvider',function ($routeProvider) {
-
-      $routeProvider
-        .when('/', {
-          templateUrl: 'views/main.html',
-          controller: 'MainCtrl'
-        })
-        .when('/in', {
-          templateUrl: 'views/in.html',
-          controller: 'AboutCtrl'
-        })
-        .otherwise({
-          redirectTo: '/'
-        });
+  .config(['$stateProvider', '$urlRouterProvider', function ($stateProvider, $urlRouterProvider) {
+    $urlRouterProvider.otherwise("/home");
+    $stateProvider
+      .state('state1', {
+        templateUrl: 'views/main.html',
+        controller: 'MainCtrl'
+      })
+      .state('state1.home', {
+        url: "/home",
+        templateUrl: 'views/partials/home.html',
+        controller: 'MainCtrl'
+      })
+      .state('state1.place', {
+        url: "/place",
+        templateUrl: 'views/partials/place.html',
+        controller: 'place'
+      })
+      .state('state1.events', {
+        url: "/events",
+        templateUrl: 'views/partials/events.html',
+        controller: 'MainCtrl'
+      })
+      .state('state1.discussion', {
+        url: "/discussion",
+        templateUrl: 'views/partials/discussion.html',
+        controller: 'MainCtrl'
+      })
+      .state('state1.reviews', {
+        url: "/reviews",
+        templateUrl: 'views/partials/reviews.html',
+        controller: 'MainCtrl'
+      })
+      .state('state2', {
+        url: "/in",
+        templateUrl: 'views/in.html',
+        controller: 'AboutCtrl'
+      })
 
   }]);
