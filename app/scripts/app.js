@@ -17,7 +17,8 @@ angular
     'ngRoute',
     'ngSanitize',
     'ngTouch',
-    'ui.router'
+    'ui.router',
+    'ymaps'
   ])
   .config(['$stateProvider', '$urlRouterProvider', function ($stateProvider, $urlRouterProvider) {
     $urlRouterProvider.otherwise("/home");
@@ -30,11 +31,13 @@ angular
         url: "/home",
         templateUrl: 'views/partials/home.html',
         controller: 'MainCtrl'
+
       })
       .state('state1.place', {
         url: "/place",
         templateUrl: 'views/partials/place.html',
         controller: 'place'
+
       })
       .state('state1.events', {
         url: "/events",
@@ -59,7 +62,9 @@ angular
       .state('state2', {
         url: "/in",
         templateUrl: 'views/in.html',
-        controller: 'MainCtrl'
+        controller: 'MainCtrl',
+        reload:true,
+        inherit:false
       })
       .state('state3', {
         url: "/reg",

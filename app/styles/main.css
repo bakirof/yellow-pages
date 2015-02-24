@@ -176,6 +176,8 @@ body {
 .sub-menu {
   font-size: 16px;
   padding: 20px;
+  padding-left: 30px;
+  border:10px solid #fdfdfd;
 }
 
 .sub-menu:hover {
@@ -424,4 +426,30 @@ color: #d8d8d8;
 .reg-button:active{
   background-color: #d1d100;
 
+}
+.user-image{
+
+
+  margin-top:10px;
+}
+.user-menu{
+  height: 40px;
+
+  margin-bottom:10px;
+}
+.user-menu-item{
+  background-color: rgba(245, 245, 0, 0.48);
+  height: 40px;
+  line-height: 40px;
+  margin-top:-1px;
+}
+.user-menu-item:hover{
+  background-color: rgb(245, 245, 0);
+  cursor:pointer;
+}
+.user-name{
+  font-size: 20px;
+  color: #5f5d76;
+  padding:10px;
+  text-align: center;
 }

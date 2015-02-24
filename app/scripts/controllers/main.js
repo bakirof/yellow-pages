@@ -8,8 +8,8 @@
  * Controller of the test1App
  */
 angular.module('app')
-  .controller('MainCtrl', ['$scope', '$cookies', 'user', function ($scope, $cookies, user) {
-    $scope.inEx='Вход';
+  .controller('MainCtrl', ['$scope', '$cookies', 'user', '$state', function ($scope, $cookies, user, $state) {
+
     $scope.test = user.query();
     $scope.in = function () {
       for (var i = 0; i < $scope.test.length; i++) {
@@ -18,27 +18,36 @@ angular.module('app')
           $cookies.au = true;
           $scope.login = undefined;
           $scope.pw = undefined;
+          $scope.au = $cookies.au;
+          $state.go('state1.home', {}, {reload: true});
+
+          location.reload();
+
         }
         else {
           $cookies.au = false;
           $scope.login = undefined;
           $scope.pw = undefined;
+
         }
       }
     };
     $scope.au = $cookies.au;
 
     $scope.exit = function () {
-      if($scope.au){
+      if ($scope.au) {
         delete $cookies["au"];
-        console.log($cookies.au);
         $scope.au = false;
-        $scope.inEx='Выход';
+        location.reload();
       }
-      else{
-        $scope.inEx='Вход';
-      }
-
+    };
+    if ($scope.au) {
+      $scope.inEx = "Выход";
+    }
+    else {
+      $scope.inEx = "Вход";
     }
 
+
   }]);
+

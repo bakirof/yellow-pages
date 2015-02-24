@@ -1,25 +1,36 @@
 <div class="row">
+
   <div class="col-xs-3 left-column">
-    <div class="menu">
-      <a ui-sref="state1.home">
-        <div class="sub-menu">Главная</div>
-      </a>
-      <a ui-sref="state1.place">
-        <div class="sub-menu">Места</div>
-      </a>
-      <a ui-sref="state1.reviews">
-        <div class="sub-menu">Рецензии</div>
-      </a>
-      <a ui-sref="state1.reviews">
-        <div class="sub-menu">Отзывы</div>
-      </a>
-      <a ui-sref="state1.discussion">
-        <div class="sub-menu">Обсуждения</div>
-      </a>
-      <a ui-sref="state1.events">
-        <div class="sub-menu">События</div>
-      </a>
+    <div class="col-xs-12" ng-show="au">
+      <div class="col-xs-12 user-name">Lorem Ipsum</div>
+      <div class="col-xs-12 user-image"><img data-ng-src="images/default_user.png" class="img-responsive"></div>
+      <div class="col-xs-12 user-menu">
+        <div class="col-xs-3 user-menu-item glyphicon glyphicon-pencil" title="Написать отзыв"></div>
+        <div class="col-xs-3 user-menu-item glyphicon glyphicon-thumbs-up" title="Палец вверх"></div>
+        <div class="col-xs-3 user-menu-item glyphicon glyphicon-thumbs-down" title="Палец вниз"></div>
+        <div class="col-xs-3 user-menu-item glyphicon glyphicon-cog" title="Настройки"></div>
+      </div>
     </div>
+    <div class="col-xs-12">
+      <div class="menu">
+        <a ui-sref="state1.home">
+          <div class="sub-menu">Главная</div>
+        </a>
+        <a ui-sref="state1.place">
+          <div class="sub-menu">Места</div>
+        </a>
+        <a ui-sref="state1.reviews">
+          <div class="sub-menu">Отзывы</div>
+        </a>
+        <a ui-sref="state1.discussion">
+          <div class="sub-menu">Обсуждения</div>
+        </a>
+        <a ui-sref="state1.events">
+          <div class="sub-menu">События</div>
+        </a>
+      </div>
+    </div>
+
   </div>
   <div class="col-xs-9 right-column">
     <div data-ui-view></div>

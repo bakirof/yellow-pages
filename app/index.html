@@ -50,7 +50,7 @@
         <ul class="nav navbar-nav">
           <li class="col-sm-9"><input type="text" data-ng-model="search" class="form-control search"
                                       placeholder="Поиск"></li>
-          <li class="col-sm-2"><a ui-sref="state2"   data-ng-click="exit()" data-ng-show="au">{{inEx}}</a></li>
+          <li class="col-sm-2"><a ui-sref="state2" id='reload' data-ng-click="exit()">{{inEx}}</a></li>
 
           <li class="col-sm-1"><a ui-sref="state3">Регистрация</a></li>
 
@@ -93,6 +93,7 @@
 <script src="scripts/controllers/about.js"></script>
 <script src="scripts/controllers/place.js"></script>
 <script src="scripts/controllers/placeId.js"></script>
+<script src="scripts/directives/place-map.js"></script>
 <!-- endbuild -->
 </body>
 </html>
