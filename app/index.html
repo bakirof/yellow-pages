@@ -8,11 +8,12 @@
         type='text/css'>
   <script src="http://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
   <script src="scripts/yamaps/yamaps.js" type="text/javascript"></script>
+
   <meta name="viewport" content="width=device-width">
   <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
   <!-- build:css(.) styles/vendor.css -->
   <!-- bower:css -->
-  <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css"/>
+  <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
   <!-- endbower -->
   <!-- endbuild -->
   <!-- build:css(.tmp) styles/main.css -->
@@ -49,8 +50,9 @@
         <ul class="nav navbar-nav">
           <li class="col-sm-9"><input type="text" data-ng-model="search" class="form-control search"
                                       placeholder="Поиск"></li>
-          <li class="col-sm-2"><a ui-sref="state2">Войти</a></li>
-          <li class="col-sm-1"><a ui-sref="state2">Регистрация</a></li>
+          <li class="col-sm-2"><a ui-sref="state2"   data-ng-click="exit()" data-ng-show="au">{{inEx}}</a></li>
+
+          <li class="col-sm-1"><a ui-sref="state3">Регистрация</a></li>
 
         </ul>
       </div>
@@ -80,6 +82,7 @@
 <script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
 <script src="bower_components/angular-touch/angular-touch.js"></script>
 <script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+<script src="bower_components/angular-ymaps/angular-ymaps.js"></script>
 <!-- endbower -->
 <!-- endbuild -->
 
@@ -89,6 +92,7 @@
 <script src="scripts/controllers/main.js"></script>
 <script src="scripts/controllers/about.js"></script>
 <script src="scripts/controllers/place.js"></script>
+<script src="scripts/controllers/placeId.js"></script>
 <!-- endbuild -->
 </body>
 </html>

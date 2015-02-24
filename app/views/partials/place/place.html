@@ -1,0 +1,56 @@
+<div class="col-xs-12 place" data-ng-controller="MainCtrl">
+  <div class="col-xs-4 place-image">
+    <img data-ng-src="{{place.imageUrl}}" class="img-responsive">
+
+    <div class="col-xs-12 placeId-category">{{place.category}}</div>
+
+  </div>
+  <div class="col-xs-8 place-desc">
+    <div class="col-xs-12 placeId-name">
+      {{place.placeName}}
+    </div>
+    <div class="col-xs-2 assessment">
+      {{place.rating}}
+    </div>
+    <div class="col-xs-4 h-work">
+      Часы работы: <br><span>{{place.hours}}</span>
+    </div>
+    <div class="col-xs-6 place-adres">
+      Адрес: <br><span>{{place.adres}}</span>
+    </div>
+    <div class="col-xs-12 place-description">
+      {{place.description}}
+    </div>
+  </div>
+  <div class="col-xs-12" id="place-map"></div>
+  <div class="col-xs-12 placeId-reviews">
+    <div class="col-xs-12 placeId-reviews-all">
+      <div class="col-xs-3 placeId-reviews-text">
+        Отзывы
+      </div>
+      <div class="col-xs-6 col-xs-offset-3 placeId-reviews-button ng-hide" data-ng-show="au">
+        Добавить свой отзыв
+      </div>
+    </div>
+
+  </div>
+
+
+  <div class="col-xs-12 placeId-comment" data-ng-repeat="comment in place.reviews">
+    <img class="col-xs-3 img-responsive" ng-src="{{comment.image}}">
+    <div class="col-xs-9 placeId-review-person">{{comment.name}}</div>
+    <div class="col-xs-9 placeId-review-date">
+      <div class="col-xs-2 placeId-review-assessment">
+        {{comment.rating}}
+      </div>
+      <div class="col-xs-5 placeId-review-date-date">{{comment.data}}  в {{comment.time}}</div>
+      <div class="col-xs-2 glyphicon glyphicon-thumbs-up placeId-review-icon" aria-hidden="true"></div>
+    </div>
+    <div class="col-xs-12 placeId-review-comment">{{comment.comment}}
+    </div>
+
+  </div>
+
+
+</div>
+

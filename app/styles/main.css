@@ -48,7 +48,7 @@ body {
 
 }
 
-/* Main marketing message and sign up button */
+    /* Main marketing message and sign up button */
 .jumbotron {
   text-align: center;
   border-bottom: 1px solid #e5e5e5;
@@ -133,7 +133,7 @@ body {
 
 .vhod {
   font-size: 33px;
-  border-bottom: 2px solid #adadad;
+  border-bottom: 5px solid #f9f9f9;
 }
 
 .form-text {
@@ -185,7 +185,7 @@ body {
 
 .registration {
   height: 200px;
-color:white;
+  color: white;
   font-weight: 600;
   font-style: italic;
   line-height: 200px;
@@ -196,26 +196,26 @@ color:white;
 
 .registration:hover {
   background-color: #f2f2f2;
-  cursor:pointer;
-  color:black;
+  cursor: pointer;
+  color: black;
 }
 
 .note {
   padding: 14px;
   margin-top: 10px;
-  border-bottom:2px solid #d2d2d2;
+  border-bottom: 2px solid #d2d2d2;
 }
 
 .image {
   height: 100px;
-background-color: oldlace;
+  background-color: oldlace;
   border: 0px solid #c5c5c5;
 
 }
 
 .note-comment {
   padding: 10px;
-  padding-top:0px;
+  padding-top: 0px;
   border: 0px solid #c5c5c5;
 
 }
@@ -224,7 +224,7 @@ background-color: oldlace;
   text-align: center;
   line-height: 40px;
   background-color: #f5f500;
-  font-size:20px;
+  font-size: 20px;
   border-radius: 2px;
 }
 
@@ -235,7 +235,7 @@ background-color: oldlace;
 
 .note-comment-bottom {
   padding-top: 15px;
-  margin-bottom:20px;
+  margin-bottom: 20px;
 }
 
 .rate {
@@ -248,30 +248,180 @@ background-color: oldlace;
   color: gray;
   border-radius: 2px;
 }
-.note-text{
+
+.note-text {
 
 }
-.place{
-  padding:20px;
-  border:10px solid #fcfcfc;
+
+.place {
+  padding: 20px;
+  border: 10px solid #fcfcfc;
 }
-.place-name{
-  font-size:16px;
-  margin-bottom:15px;
+
+.place-name {
+  font-size: 16px;
+  margin-bottom: 15px;
   border-bottom: 5px solid #fcfcfc;
 }
-.h-work{
+
+.h-work {
   color: #d0d0d0;
-  font-size:13px;
+  font-size: 13px;
 }
-.place-image{
+
+.place-image {
 
 }
-.place-description{
-  margin-top:15px;
+
+.place-description {
+  margin-top: 15px;
   color: #808080;
 }
-.place-adres{
+
+.place-adres {
   color: #d0d0d0;
-  font-size:13px;
+  font-size: 13px;
+}
+
+.place-reviews {
+  background-color: #fafafa;
+  margin-top: 10px;
+  padding: 10px;
+  text-align: center;
+  font-size: 16px;
+  color: #818181;
+
+}
+
+.placeId-name {
+  margin-bottom: 15px;
+  font-size: 24px;
+  color: #0e90d2;
+  border-bottom: 5px solid #fcfcfc;
+}
+
+.placeId-category {
+  color: gray;
+  margin-top: 15px;
+  font-size: 14px;
+  padding: 10px;
+  text-align: center;
+  background-color: #fbfbfb;
+}
+
+.placeId-image {
+
+  margin-top: 0.3em;
+
+}
+
+.rating-text {
+  font-size: 18px;
+  padding: 8px;
+}
+
+.top {
+  margin-top: 15px;
+}
+
+#place-map {
+  margin-top: 15px;
+  height: 250px;
+}
+
+.placeId-reviews {
+  margin-top: 20px;
+
+}
+
+.placeId-reviews-all {
+  margin-bottom: 15px;
+  font-size: 24px;
+  color: #c1c1c1;
+  background-color: #fafafa;
+  padding: 10px;
+}
+
+.placeId-reviews-button {
+  padding: 10px;
+  background-color: rgba(245, 245, 0, 0.40);
+
+  text-align: center;
+}
+
+.placeId-reviews-button:hover {
+  padding: 10px;
+  background-color: #f5f500;
+  color: black;
+  cursor: pointer;
+}
+
+.placeId-reviews-text {
+  padding: 10px;
+  color: #585858;
+}
+.placeId-comment{
+
+  border:10px solid #fcfcfc;
+  padding:15px;
+
+}
+.placeId-review-person{
+  font-size:18px;
+  color: #4e5274;
+  margin-bottom:10px;
+  border-bottom:3px solid #f9f9f9;
+}
+.placeId-review-assessment{
+  text-align: center;
+  line-height: 40px;
+  background-color: #f5f500;
+  font-size: 16px;
+  border-radius: 2px;
+
+}
+.placeId-review-comment{
+  margin-top:15px;
+color:gray;
+}
+.placeId-review-date-date{
+
+  line-height: 40px;
+color: #d8d8d8;
+  font-size: 16px;
+  border-radius: 2px;
+}
+.placeId-review-icon{
+  line-height: 40px;
+  text-align: center;
+  background-color: #d4f7c3;
+}
+.reg-name{
+  padding:15px;
+  font-size:20px;
+}
+.reg{
+  font-size:25px;
+  padding:15px;
+  margin-bottom:20px;
+  border-bottom:5px solid #f9f9f9;
+
+}
+.block{
+  margin-bottom:30px;
+}
+.reg-button{
+
+  border:0px solid black;
+  padding:20px;
+  width:100%;
+  margin-top:20px;
+  border-radius:2px;
+  font-size:20px;
+  background-color:#f5f500;
+  color:black;
+}
+.reg-button:active{
+  background-color: #d1d100;
+
 }

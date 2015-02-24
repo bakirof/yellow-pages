@@ -51,10 +51,20 @@ angular
         templateUrl: 'views/partials/reviews.html',
         controller: 'MainCtrl'
       })
+      .state('state1.placeOne', {
+        url:'/place/:id',
+        templateUrl: 'views/partials/place/place.html',
+        controller: 'placeId'
+      })
       .state('state2', {
         url: "/in",
         templateUrl: 'views/in.html',
-        controller: 'AboutCtrl'
+        controller: 'MainCtrl'
+      })
+      .state('state3', {
+        url: "/reg",
+        templateUrl: 'views/reg.html',
+        controller: 'MainCtrl'
       })
 
   }]);

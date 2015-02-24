@@ -1,11 +1,12 @@
-
-
-
 <div class="col-xs-12 place" data-ng-repeat="place in places">
-  <div class="col-xs-4 place-image"><img data-ng-src="{{place.imageUrl}}" class="img-responsive"></div>
+  <div class="col-xs-4 place-image">
+    <img data-ng-src="{{place.imageUrl}}" class="img-responsive">
+
+    <div class="col-xs-12 place-reviews">{{place.category}}</div>
+  </div>
   <div class="col-xs-8 place-desc">
     <div class="col-xs-12 place-name">
-      {{place.placeName}}
+      <a ui-sref="state1.placeOne({id:place._id})">{{place.placeName}}</a>
     </div>
     <div class="col-xs-2 assessment">
       {{place.rating}}

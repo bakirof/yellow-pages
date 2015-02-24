@@ -1,0 +1,19 @@
+<div class="col-xs-12 block">
+  <div class="col-xs-12 reg">Регистрация</div>
+  <div class="col-xs-12">
+
+    <div class="col-xs-6 col-xs-offset-3">
+      <input type="text" data-ng-model="name" placeholder="Имя" required class="form-control search">
+    </div>{{name}}
+    <div class="col-xs-6 col-xs-offset-3">
+      <input type="email" data-ng-model="email" placeholder="Email" required class="form-control search">
+    </div>{{email}}
+    <div class="col-xs-6 col-xs-offset-3">
+      <input type="password" data-ng-model="password" placeholder="Пароль" required class="form-control search">
+    </div>{{password}}
+    <div class="col-xs-6 col-xs-offset-3">
+      <button class="reg-button" data-ng-click="auth()">Ok</button>
+    </div>
+    {{cookie}}
+  </div>
+</div>
