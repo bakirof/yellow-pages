@@ -1,115 +1,20 @@
-<div class="note">
-  <div class="row">
-    <div class="col-xs-2 image">
+<div ng-show="au" data-ng-repeat="count in test[i].userLikePlace">
 
+<div class="col-xs-12 placeId-comment" data-ng-repeat="comment in likeReviews | filter:count.id">
+  <div class="col-xs-12 userLike-place">{{comment.placeName}}</div>
+  <div class="col-xs-12 placeId-comment" data-ng-repeat="item in comment.reviews | limitTo:4">
+  <img class="col-xs-3 img-responsive" ng-src="{{item.image}}">
+  <div class="col-xs-9 placeId-review-person">{{item.name}}</div>
+  <div class="col-xs-9 placeId-review-date">
+    <div class="col-xs-2 placeId-review-assessment">
+      {{item.rating}}
     </div>
-    <div class="col-xs-10 note-comment">
-      <div class="row note-comment-top">
-        <div class="col-xs-12">Имя коммент место</div>
-      </div>
-      <div class="row note-comment-bottom">
-        <div class="col-xs-2">
-          <div class="assessment">5</div>
-        </div>
-
-        <div class="col-xs-10">
-          <span class="rate">Дата</span><br>
-          <span class="date">18.02.2015</span>
-        </div>
-      </div>
-      <div class="note-text">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad, blanditiis cupiditate enim, est excepturi
-        incidunt inventore natus non nulla quae, recusandae vel voluptate? Asperiores delectus esse iure natus
-        obcaecati tempora!
-      </div>
-    </div>
+    <div class="col-xs-5 placeId-review-date-date">{{item.data}}  в {{item.time}}</div>
+    <div class="col-xs-2 glyphicon glyphicon-thumbs-up placeId-review-icon" aria-hidden="true"></div>
+  </div>
+  <div class="col-xs-12 placeId-review-comment">{{item.comment}}
   </div>
 </div>
-
-<div class="note">
-  <div class="row">
-    <div class="col-xs-2 image">
-
-    </div>
-    <div class="col-xs-10 note-comment">
-      <div class="row note-comment-top">
-        <div class="col-xs-12">Имя коммент место</div>
-      </div>
-      <div class="row note-comment-bottom">
-        <div class="col-xs-2">
-          <div class="assessment">3</div>
-        </div>
-
-        <div class="col-xs-10">
-          <span class="rate">Дата</span><br>
-          <span class="date">18.02.2015</span>
-        </div>
-      </div>
-      <div class="note-text">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab alias aperiam, consectetur, culpa cumque
-        dolorem doloremque est facere, fugiat nisi numquam odit officiis perferendis repellat reprehenderit
-        temporibus velit veniam! Voluptatem.
-      </div>
-    </div>
-  </div>
 </div>
 
-
-<div class="note">
-  <div class="row">
-    <div class="col-xs-2 image">
-
-    </div>
-    <div class="col-xs-10 note-comment">
-      <div class="row note-comment-top">
-        <div class="col-xs-12">Имя коммент место</div>
-      </div>
-      <div class="row note-comment-bottom">
-        <div class="col-xs-2">
-          <div class="assessment">5</div>
-        </div>
-
-        <div class="col-xs-10">
-          <span class="rate">Дата</span><br>
-          <span class="date">18.02.2015</span>
-        </div>
-      </div>
-      <div class="note-text">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad, blanditiis cupiditate enim, est excepturi
-        incidunt inventore natus non nulla quae, recusandae vel voluptate? Asperiores delectus esse iure natus
-        obcaecati tempora!
-      </div>
-    </div>
-  </div>
-</div>
-
-
-<div class="note">
-  <div class="row">
-    <div class="col-xs-2 image">
-
-    </div>
-    <div class="col-xs-10 note-comment">
-      <div class="row note-comment-top">
-        <div class="col-xs-12">Имя коммент место</div>
-      </div>
-      <div class="row note-comment-bottom">
-        <div class="col-xs-2">
-          <div class="assessment">4</div>
-        </div>
-
-        <div class="col-xs-10">
-          <span class="rate">Дата</span><br>
-          <span class="date">18.02.2015</span>
-        </div>
-      </div>
-      <div class="note-text">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad adipisci, amet dolores doloribus fugiat in
-        magni maiores nisi nulla, obcaecati porro quasi reiciendis repellat sed sint ut veniam. Eum, neque? Lorem
-        ipsum dolor sit amet, consectetur adipisicing elit. Autem iusto, neque nostrum praesentium quas sapiente
-        soluta vitae! Accusantium, cumque deserunt, dolorum et, expedita fugit nam possimus quam quasi voluptas
-        voluptatum!
-      </div>
-    </div>
-  </div>
 </div>

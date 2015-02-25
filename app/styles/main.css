@@ -48,7 +48,7 @@ body {
 
 }
 
-    /* Main marketing message and sign up button */
+/* Main marketing message and sign up button */
 .jumbotron {
   text-align: center;
   border-bottom: 1px solid #e5e5e5;
@@ -177,7 +177,7 @@ body {
   font-size: 16px;
   padding: 20px;
   padding-left: 30px;
-  border:10px solid #fdfdfd;
+  border: 10px solid #fdfdfd;
 }
 
 .sub-menu:hover {
@@ -362,19 +362,22 @@ body {
   padding: 10px;
   color: #585858;
 }
-.placeId-comment{
 
-  border:10px solid #fcfcfc;
-  padding:15px;
+.placeId-comment {
+
+  border: 10px solid #fcfcfc;
+  padding: 15px;
 
 }
-.placeId-review-person{
-  font-size:18px;
+
+.placeId-review-person {
+  font-size: 18px;
   color: #4e5274;
-  margin-bottom:10px;
-  border-bottom:3px solid #f9f9f9;
+  margin-bottom: 10px;
+  border-bottom: 3px solid #f9f9f9;
 }
-.placeId-review-assessment{
+
+.placeId-review-assessment {
   text-align: center;
   line-height: 40px;
   background-color: #f5f500;
@@ -382,74 +385,95 @@ body {
   border-radius: 2px;
 
 }
-.placeId-review-comment{
-  margin-top:15px;
-color:gray;
+
+.placeId-review-comment {
+  margin-top: 15px;
+  color: gray;
 }
-.placeId-review-date-date{
+
+.placeId-review-date-date {
 
   line-height: 40px;
-color: #d8d8d8;
+  color: #d8d8d8;
   font-size: 16px;
   border-radius: 2px;
 }
-.placeId-review-icon{
+
+.placeId-review-icon {
   line-height: 40px;
   text-align: center;
   background-color: #d4f7c3;
 }
-.reg-name{
-  padding:15px;
-  font-size:20px;
+
+.reg-name {
+  padding: 15px;
+  font-size: 20px;
 }
-.reg{
-  font-size:25px;
-  padding:15px;
-  margin-bottom:20px;
-  border-bottom:5px solid #f9f9f9;
+
+.reg {
+  font-size: 25px;
+  padding: 15px;
+  margin-bottom: 20px;
+  border-bottom: 5px solid #f9f9f9;
 
 }
-.block{
-  margin-bottom:30px;
-}
-.reg-button{
 
-  border:0px solid black;
-  padding:20px;
-  width:100%;
-  margin-top:20px;
-  border-radius:2px;
-  font-size:20px;
-  background-color:#f5f500;
-  color:black;
+.block {
+  margin-bottom: 30px;
 }
-.reg-button:active{
+
+.reg-button {
+
+  border: 0px solid black;
+  padding: 20px;
+  width: 100%;
+  margin-top: 20px;
+  border-radius: 2px;
+  font-size: 20px;
+  background-color: #f5f500;
+  color: black;
+}
+
+.reg-button:active {
   background-color: #d1d100;
 
 }
-.user-image{
 
+.user-image {
 
-  margin-top:10px;
+  margin-top: 10px;
 }
-.user-menu{
+
+.user-menu {
   height: 40px;
 
-  margin-bottom:10px;
+  margin-bottom: 10px;
 }
-.user-menu-item{
+
+.user-menu-item {
   background-color: rgba(245, 245, 0, 0.48);
   height: 40px;
   line-height: 40px;
-  margin-top:-1px;
+  margin-top: -1px;
+  text-align: center;
 }
-.user-menu-item:hover{
+
+.user-menu-item:hover {
   background-color: rgb(245, 245, 0);
-  cursor:pointer;
+  cursor: pointer;
 }
-.user-name{
+
+.user-name {
   font-size: 20px;
   color: #5f5d76;
-  padding:10px;
+  padding: 10px;
   text-align: center;
+}
+
+.userLike-place {
+  padding: 10px;
+  font-size: 30px;
+  line-height: 30px;
+  padding-top: 0px;
+  font-weight: 600;
 }

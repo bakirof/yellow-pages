@@ -30,7 +30,7 @@ angular
       .state('state1.home', {
         url: "/home",
         templateUrl: 'views/partials/home.html',
-        controller: 'MainCtrl'
+        controller: 'homeController'
 
       })
       .state('state1.place', {
