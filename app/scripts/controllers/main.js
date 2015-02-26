@@ -8,7 +8,7 @@
  * Controller of the test1App
  */
 angular.module('app')
-  .controller('MainCtrl', ['$scope', '$cookies', 'user', '$state', function ($scope, $cookies, user, $state) {
+  .controller('MainCtrl', ['$scope', '$cookies', '$rootScope', 'user', '$state', function ($scope, $cookies, $rootScope, user, $state) {
 
     $scope.test = user.query();
     $scope.in = function () {
@@ -27,8 +27,11 @@ angular.module('app')
         }
       }
     };
+
     $scope.i=$cookies.i;
+    $rootScope.i=$scope.i;
     $scope.au = $cookies.au;
+
     $scope.exit = function () {
       if ($scope.au) {
         delete $cookies["au"];

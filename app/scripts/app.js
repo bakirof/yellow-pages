@@ -55,7 +55,7 @@ angular
         controller: 'MainCtrl'
       })
       .state('state1.placeOne', {
-        url:'/place/:id',
+        url: '/place/:id',
         templateUrl: 'views/partials/place/place.html',
         controller: 'placeId'
       })
@@ -63,8 +63,8 @@ angular
         url: "/in",
         templateUrl: 'views/in.html',
         controller: 'MainCtrl',
-        reload:true,
-        inherit:false
+        reload: true,
+        inherit: false
       })
       .state('state3', {
         url: "/reg",
@@ -72,4 +72,9 @@ angular
         controller: 'MainCtrl'
       })
 
+  }])
+  .config(['$resourceProvider', function ($resourceProvider) {
+    // Don't strip trailing slashes from calculated URLs
+    console.log($resourceProvider.defaults);
+    $resourceProvider.defaults.actions.update = {method: "PUT", isArray:true}
   }]);

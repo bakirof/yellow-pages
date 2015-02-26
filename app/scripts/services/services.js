@@ -21,3 +21,9 @@ angular.module('app')
     function ($resource) {
       return $resource('http://localhost:3000/yellowDB/user');
     }]);
+
+angular.module('app')
+  .factory('userLike', ['$resource',
+    function ($resource) {
+      return $resource('http://localhost:3000/yellowDB/user/:id');
+    }]);

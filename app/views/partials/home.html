@@ -1,20 +1,19 @@
 <div ng-show="au" data-ng-repeat="count in test[i].userLikePlace">
 
-<div class="col-xs-12 placeId-comment" data-ng-repeat="comment in likeReviews | filter:count.id">
-  <div class="col-xs-12 userLike-place">{{comment.placeName}}</div>
-  <div class="col-xs-12 placeId-comment" data-ng-repeat="item in comment.reviews | limitTo:4">
-  <img class="col-xs-3 img-responsive" ng-src="{{item.image}}">
-  <div class="col-xs-9 placeId-review-person">{{item.name}}</div>
-  <div class="col-xs-9 placeId-review-date">
-    <div class="col-xs-2 placeId-review-assessment">
-      {{item.rating}}
+  <div class="col-xs-12 placeId-comment-likes" data-ng-repeat="comment in likeReviews | filter:count.id">
+    <div class="col-xs-12 userLike-place"><a ui-sref="state1.placeOne({id:count.id})">{{comment.placeName}}</a></div>
+    <div class="col-xs-12 placeId-comment-likes-items" data-ng-repeat="item in comment.reviews | limitTo:3">
+      <img class="col-xs-3 img-responsive" ng-src="{{item.image}}">
+      <div class="col-xs-9 placeId-review-person">{{item.name}}</div>
+      <div class="col-xs-9 placeId-review-date">
+        <div class="col-xs-2 placeId-review-assessment">
+          {{item.rating}}
+        </div>
+        <div class="col-xs-10 placeId-review-date-date">{{item.data}} в {{item.time}}</div>
+      </div>
+      <div class="col-xs-12 placeId-review-comment">{{item.comment}}
+      </div>
     </div>
-    <div class="col-xs-5 placeId-review-date-date">{{item.data}}  в {{item.time}}</div>
-    <div class="col-xs-2 glyphicon glyphicon-thumbs-up placeId-review-icon" aria-hidden="true"></div>
   </div>
-  <div class="col-xs-12 placeId-review-comment">{{item.comment}}
-  </div>
-</div>
-</div>
 
 </div>
