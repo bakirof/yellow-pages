@@ -71,10 +71,15 @@ angular
         templateUrl: 'views/reg.html',
         controller: 'MainCtrl'
       })
+      .state('state1.settings', {
+        url: "/settings",
+        templateUrl: 'views/settings.html',
+        controller: 'settingsController'
+      })
 
   }])
   .config(['$resourceProvider', function ($resourceProvider) {
     // Don't strip trailing slashes from calculated URLs
-    console.log($resourceProvider.defaults);
-    $resourceProvider.defaults.actions.update = {method: "PUT", isArray:true}
+
+    $resourceProvider.defaults.actions.update = {method: "PUT"}
   }]);

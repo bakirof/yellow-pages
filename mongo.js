@@ -78,18 +78,18 @@ db.place.update(
 db.user.insert(
   {
     userName: "Rem Ipsum",
-    userEmail: "w@w",
-    userPW: "w"
+    userEmail: "a@a",
+    userPW: "a"
   }
 );
 
 db.user.update(
-  {userEmail: "w@w"},
+  {userEmail: "a@a"},
   {
     $set: {
       userName: "Lorem Ipsum",
-      userEmail: "q@q",
-      userPW: "q",
+      userEmail: "z@z",
+      userPW: "z",
       userImage: "images/user/img02.jpg",
       userLikePlace: [
         {id: "54e5aace02e39033b2544f3d"}
@@ -108,3 +108,16 @@ db.user.update(
 
 
 db.user.remove({});
+
+
+
+db.review.insert(
+  {
+    userId: "Rem Ipsum",
+    userPlaceId: "a@a",
+    text:"Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
+    rating:"4",
+    date:"02.03.2015",
+    time:"9:28"
+  }
+);

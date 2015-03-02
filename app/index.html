@@ -52,7 +52,7 @@
                                       placeholder="Поиск"></li>
           <li class="col-sm-2"><a ui-sref="state2" id='reload' data-ng-click="exit()">{{inEx}}</a></li>
 
-          <li class="col-sm-1"><a ui-sref="state3">Регистрация</a></li>
+          <li class="col-sm-1"><a ui-sref="state3" ng-show="!au">Регистрация</a></li>
 
         </ul>
       </div>
@@ -83,6 +83,7 @@
 <script src="bower_components/angular-touch/angular-touch.js"></script>
 <script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
 <script src="bower_components/angular-ymaps/angular-ymaps.js"></script>
+
 <!-- endbower -->
 <!-- endbuild -->
 
@@ -94,7 +95,16 @@
 <script src="scripts/controllers/place.js"></script>
 <script src="scripts/controllers/placeId.js"></script>
 <script src="scripts/controllers/homeController.js"></script>
+<script src="scripts/controllers/likeController.js"></script>
+<script src="scripts/controllers/regController.js"></script>
+<script src="scripts/controllers/formPlaceId.js"></script>
+<script src="scripts/controllers/settingsController.js"></script>
+<script src="scripts/controllers/placeIdController.js"></script>
+<script src="scripts/controllers/settingsGroupController.js"></script>
 <script src="scripts/directives/place-map.js"></script>
+<script src="scripts/directives/like.js"></script>
+<script src="scripts/directives/placeDirective.js"></script>
+<script src="scripts/jqueryScripts.js"></script>
 <!-- endbuild -->
 </body>
 </html>

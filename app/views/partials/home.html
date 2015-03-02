@@ -1,10 +1,16 @@
-<div ng-show="au" data-ng-repeat="count in test[i].userLikePlace">
+<div ng-show="au">
+<div class="col-xs-12 top-filter-place">
+<div class="col-sm-9 xol-xs-12"><input type="text" ng-model="filt" class="form-control filter-places" placeholder="Фильтр"></div>
+  <div class="col-sm-3 xol-xs-12 delete-all-places" ng-click="deleteAllLikePlaces()">Удалить все</div>
+</div>
 
-  <div class="col-xs-12 placeId-comment-likes" data-ng-repeat="comment in likeReviews | filter:count.id">
+<div data-ng-repeat="count in test[i].userLikePlace">
+
+  <div class="col-xs-12 placeId-comment-likes" data-ng-repeat="comment in likeReviews | filter:count.id | filter:filt">
     <div class="col-xs-12 userLike-place"><a ui-sref="state1.placeOne({id:count.id})">{{comment.placeName}}</a></div>
     <div class="col-xs-12 placeId-comment-likes-items" data-ng-repeat="item in comment.reviews | limitTo:3">
-      <img class="col-xs-3 img-responsive" ng-src="{{item.image}}">
-      <div class="col-xs-9 placeId-review-person">{{item.name}}</div>
+      <img class="col-xs-2 img-responsive" ng-src="{{item.userImage}}">
+      <div class="col-xs-10 placeId-review-person">{{item.userName}}</div>
       <div class="col-xs-9 placeId-review-date">
         <div class="col-xs-2 placeId-review-assessment">
           {{item.rating}}
@@ -16,4 +22,5 @@
     </div>
   </div>
 
+</div>
 </div>

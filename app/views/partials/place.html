@@ -3,10 +3,9 @@
     <img data-ng-src="{{place.imageUrl}}" class="img-responsive">
 
     <div class="col-xs-12 place-reviews">{{place.category}}</div>
-    <div class="col-xs-12 place-actions" data-ng-show="au" data-ng-click="toggleLike(place._id)" data-ng-show="like">
-      <div class="col-xs-12 glyphicon glyphicon-thumbs-up"></div>
 
-    </div>
+    <like></like>
+
   </div>
   <div class="col-xs-8 place-desc">
     <div class="col-xs-12 place-name">
@@ -25,6 +24,7 @@
       {{place.description}}
     </div>
   </div>
+
 </div>
 
 

@@ -17,7 +17,7 @@ angular.module('app')
           $cookies.au = true;
           $cookies.i=i;
           $state.go('state1.home', {}, {reload: true});
-          location.reload();
+          setTimeout(function(){location.reload()},10);
           break;
         }
         else {
@@ -38,7 +38,7 @@ angular.module('app')
         delete $cookies["user"];
         delete $cookies["i"];
         $scope.au = false;
-        location.reload();
+        setTimeout(function(){location.reload()},10);
       }
     };
     if ($scope.au) {
