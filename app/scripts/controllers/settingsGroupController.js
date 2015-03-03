@@ -1,4 +1,5 @@
 angular.module("app").controller('settingsGroupController', ['$scope', 'userLike', function ($scope, userLike) {
+  $scope.pas = false;
   $scope.newNameClick = function () {
     if ($scope.newNameForm.$valid) {
       userLike.update(
@@ -50,6 +51,31 @@ angular.module("app").controller('settingsGroupController', ['$scope', 'userLike
       );
       location.reload();
     }
+  };
+
+  $scope.newPWClick = function () {
+
+    if ($scope.newPWForm.$valid) {
+      if ($scope.oldPW == $scope.test[$scope.i].userPW) {
+        userLike.update(
+          {id: $scope.test[$scope.i]._id},
+          {
+            userName: $scope.test[$scope.i].userName,
+            userLastName: $scope.test[$scope.i].userLastName,
+            userEmail: $scope.test[$scope.i].userEmail,
+            userPW: $scope.newPW,
+            userImage: $scope.test[$scope.i].userImage,
+            userLikePlace: $scope.test[$scope.i].userLikePlace,
+            userReviews: $scope.test[$scope.i].userReviews
+          }
+        );
+        location.reload();
+      }
+      else {
+        $scope.pas = true;
+      }
+    }
+
   };
 
 
