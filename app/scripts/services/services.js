@@ -55,5 +55,9 @@ angular.module('app')
     function ($resource) {
       return $resource('http://localhost:3000/yellowDB/review?query={"userPlaceId"%3A":idPlace"}');
     }]);
-
+angular.module('app')
+  .factory('myReviews', ['$resource',
+    function ($resource) {
+      return $resource('http://localhost:3000/yellowDB/review?query={"userId"%3A":userId"}');
+    }]);
 

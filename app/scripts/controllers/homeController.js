@@ -6,6 +6,7 @@ angular.module('app')
       userLike.update({id: $scope.test[$scope.i]._id},
         {
           userName: $scope.test[$scope.i].userName,
+          userLastName: $scope.test[$scope.i].userLastName,
           userEmail: $scope.test[$scope.i].userEmail,
           userPW: $scope.test[$scope.i].userPW,
           userImage: $scope.test[$scope.i].userImage,

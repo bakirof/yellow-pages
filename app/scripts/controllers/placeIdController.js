@@ -1,8 +1,13 @@
 angular.module('app')
-  .controller('placeIdController', ['$scope', 'placeId', '$stateParams', 'review',
-    function ($scope, placeId, $stateParams, review) {
-      $scope.place = placeId.get({id: $stateParams.id});
+  .controller('placeIdController', ['$scope', 'placeId', '$stateParams', 'userReview',
+    function ($scope, placeId, $stateParams, userReview) {
+
       $scope.uId = $scope.comment.userId;
-      console.log($scope.userId);
+      $scope.reviewId = userReview.get({id: $scope.uId}).$promise.then(function (value) {
+        $scope.reviewId = value;
+
+      });
+
+
 
     }]);

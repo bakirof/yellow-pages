@@ -76,7 +76,11 @@ angular
         templateUrl: 'views/settings.html',
         controller: 'settingsController'
       })
-
+      .state('state1.myReviews', {
+        url: "/my-reviews",
+        templateUrl: 'views/myReviews.html',
+        controller: 'myReviewsController'
+      })
   }])
   .config(['$resourceProvider', function ($resourceProvider) {
     // Don't strip trailing slashes from calculated URLs

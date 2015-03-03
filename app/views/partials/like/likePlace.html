@@ -1,0 +1,15 @@
+<div class="col-xs-12 userLike-place"><a ui-sref="state1.placeOne({id:count.id})">{{comment.placeName}}</a></div>
+
+
+<div class="col-xs-12 placeId-comment-likes-items" data-ng-repeat="item in comment.reviews | limitTo:3">
+  <img class="col-xs-2 img-responsive" ng-src="{{item.userImage}}">
+  <div class="col-xs-10 placeId-review-person">{{item.userName}}</div>
+  <div class="col-xs-9 placeId-review-date">
+    <div class="col-xs-2 placeId-review-assessment">
+      {{item.rating}}
+    </div>
+    <div class="col-xs-10 placeId-review-date-date">{{item.data}} в {{item.time}}</div>
+  </div>
+  <div class="col-xs-12 placeId-review-comment">{{item.comment}}
+  </div>
+</div>

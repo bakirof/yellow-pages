@@ -369,6 +369,7 @@ body {
   padding: 15px;
 
 }
+
 .placeId-comment2 {
 
   border: 10px solid #fcfcfc;
@@ -376,6 +377,7 @@ body {
   background-color: #fcfcfc;
 
 }
+
 .placeId-comment-likes {
   background-color: #fcfcfc;
   border: 10px solid #fcfcfc;
@@ -519,74 +521,131 @@ body {
 .place-actions:hover {
   background-color: rgb(245, 245, 0);
 }
-.filter-places{
+
+.filter-places {
   border-radius: 2px;
-border:2px solid #ececec;
+  border: 2px solid #ececec;
 }
-.delete-all-places{
+
+.delete-all-places {
   background-color: rgba(255, 0, 0, 0.47);
   text-align: center;
   font-size: 18px;
-  color:white;
-  padding:4px;
+  color: white;
+  padding: 4px;
 
 }
-.delete-all-places:hover{
+
+.delete-all-places:hover {
   background-color: rgba(255, 0, 0, 0.61);
   cursor: pointer;
 }
-.top-filter-place{
-  padding:20px;
-background-color: rgba(80, 78, 105, 0.10);
+
+.top-filter-place {
+  padding: 20px;
+  background-color: rgba(80, 78, 105, 0.10);
 }
-.userReviewPlaceRating{
+
+.userReviewPlaceRating {
   height: 40px;
 
 }
-.textarea{
-  padding:20px;
-  padding-top:0px;
+
+.textarea {
+  padding: 20px;
+  padding-top: 0px;
 }
-.textarea-text{
-border-radius: 2px;
-  border:5px solid rgba(10, 10, 21, 0.09);
+
+.textarea-text {
+  border-radius: 2px;
+  border: 5px solid rgba(10, 10, 21, 0.09);
 }
-.submitUserAddReview{
+
+.submitUserAddReview {
   background-color: #f5f500;
   font-size: 20px;
   padding: 10px;
   border-radius: 2px;
-  border:0px solid #f9f9f9;
+  border: 0px solid #f9f9f9;
 }
-.submitUserAddReview:active{
+
+.submitUserAddReview:active {
   background-color: #e8e800;
 }
-.settings{
+
+.settings {
   background-color: rgba(80, 78, 105, 0.10);
-  padding:20px;
-  font-size:20px;
+  padding: 20px;
+  font-size: 20px;
 }
-.settings-group{
-  padding:20px;
+
+.settings-group {
+  padding: 20px;
   border: 10px solid #fafafa;
 }
-.settingsType{
-  border-radius:2px;
-  border:4px solid #eaeaea;
-  font-size:16px;
+
+.settingsType {
+  border-radius: 2px;
+  border: 4px solid #eaeaea;
+  font-size: 16px;
 }
-.settingsTypeButton{
-  padding:4px;
+
+.settingsTypeButton {
+  padding: 4px;
   background-color: #f5f500;
-  border:0px solid black;
-  border-bottom:4px solid #eaeaea;
-  border-radius:2px;
-  font-size:16px;
+  border: 0px solid black;
+  border-bottom: 4px solid #eaeaea;
+  border-radius: 2px;
+  font-size: 16px;
 
 }
-.your{
-  padding:20px;
+
+.your {
+  padding: 20px;
   background-color: rgba(192, 187, 252, 0.05);
-  color:darkslateblue;
-  margin-bottom:10px;
+  color: darkslateblue;
+  margin-bottom: 10px;
+}
+
+.myReviews {
+  background-color: rgba(80, 78, 105, 0.10);
+  padding: 20px;
+  font-size: 20px;
+
+}
+
+.myReview {
+  background-color: #f8f8f8;
+  padding: 10px;
+  font-size: 16px;
+  color: #4f6280;
+}
+
+.myReview-bottom {
+
+  padding-top: 5px;
+  font-size: 16px;
+  color: gray;
+}
+
+.rev {
+  padding: 20px;
+  border: 10px solid #fafafa;
+}
+
+.ardes {
+  color: #dbdbdb;
+  font-size: 14px;
+}
+
+.reviewText {
+  padding-top: 10px;
+  color: #6f6f6f;
+}
+
+.likesReview {
+  padding: 10px;
+  background-color: #f5f500;
+  text-align: center;
+  margin-top:10px;
 }
