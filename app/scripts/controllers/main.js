@@ -10,7 +10,16 @@
 angular.module('app')
   .controller('MainCtrl', ['$scope', '$cookies', '$rootScope', 'user', '$state', function ($scope, $cookies, $rootScope, user, $state) {
 
-    $scope.test = user.query();
+    $scope.test = user.query().$promise.then(function(val){
+      $scope.test=val;
+      if ($scope.test[$scope.i].userLikePlace.length != 0) {
+        $scope.haveLikes = true;
+      }
+      else {
+        $scope.haveLikes = false;
+      }
+
+    });
     $scope.in = function () {
       for (var i = 0; i < $scope.test.length; i++) {
         if ($scope.login == $scope.test[i].userEmail && $scope.pw == $scope.test[i].userPW) {
@@ -25,6 +34,7 @@ angular.module('app')
           delete $cookies["au"];
           delete $cookies["user"];
           delete $cookies["i"];
+          delete $cookies["id"];
         }
       }
     };
@@ -33,7 +43,7 @@ angular.module('app')
     $rootScope.i=$scope.i;
     $rootScope.id=$cookies.id;
     $scope.au = $cookies.au;
-
+    $rootScope.au=$scope.au;
     $scope.exit = function () {
       if ($scope.au) {
         delete $cookies["au"];

@@ -2,12 +2,11 @@ angular.module('app')
   .controller('place', ['$scope', 'place', 'userLike',
     function ($scope, place, userLike) {
       $scope.places = place.query({db: 'yellowDB', collection: 'place'});
-
       $scope.toggleLike = function (id) {
+
         var addId = {
           id: id
         };
-
 
         $scope.test[$scope.i].userLikePlace.push(addId);
 
@@ -21,16 +20,5 @@ angular.module('app')
             userLikePlace: $scope.test[$scope.i].userLikePlace,
             userReviews: $scope.test[$scope.i].userReviews
           });
-
-        /*console.log($scope.like);
-for(var z=0;z<$scope.test[$scope.i].userLikePlace.length;z++){
- // console.log(id == $scope.test[$scope.i].userLikePlace[z].id);
-          if (id == $scope.test[$scope.i].userLikePlace[z].id) {
-            $scope.like = false;
-          }
-        }*/
-
       }
-
-
     }]);

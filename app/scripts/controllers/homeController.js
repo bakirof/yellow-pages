@@ -1,8 +1,25 @@
 angular.module('app')
   .controller("homeController", ['$scope', 'place', '$rootScope', 'userLike', function ($scope, place, $rootScope, userLike) {
-    $scope.likeReviews = place.query({db: 'yellowDB', collection: 'place'});
-    $scope.showLimit = true;
+    $scope.sortReverse = true;
+    $scope.limit = 2;
+    $scope.likeReviews = place.query({db: 'yellowDB', collection: 'place'}).$promise.then(function (value) {
+      $scope.likeReviews = value;
+      if ($scope.test[$scope.i].userLikePlace.length != 0) {
+        $scope.haveLikes = true;
+      }
+      else {
+        $scope.haveLikes = false;
+      }
+    });
+
+
+
     $scope.deleteAllLikePlaces = function () {
+
+      $scope.test[$scope.i].userLikePlace = [];
+      $scope.haveLikes = false;
+
+
       userLike.update({id: $scope.test[$scope.i]._id},
         {
           userName: $scope.test[$scope.i].userName,
@@ -13,7 +30,7 @@ angular.module('app')
           userLikePlace: [],
           userReviews: $scope.test[$scope.i].userReviews
         });
-      location.reload();
+
     };
 
 
