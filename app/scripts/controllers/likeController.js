@@ -44,5 +44,4 @@ if($scope.test[$scope.i]){
       });
   }
 
-}])
-;
+}]);
