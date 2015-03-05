@@ -2,13 +2,13 @@
 
 /**
  * @ngdoc function
- * @name test1App.controller:MainCtrl
+ * @name test1App.controller:AuthController
  * @description
- * # MainCtrl
+ * # AuthController
  * Controller of the test1App
  */
 angular.module('app')
-  .controller('MainCtrl', ['$scope', '$cookies', '$rootScope', 'user', '$state', function ($scope, $cookies, $rootScope, user, $state) {
+  .controller('AuthController', ['$scope', '$cookies', '$rootScope', 'user', '$state', function ($scope, $cookies, $rootScope, user, $state) {
 
     $scope.test = user.query().$promise.then(function(val){
       $scope.test=val;

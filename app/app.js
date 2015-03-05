@@ -24,62 +24,62 @@ angular
     $urlRouterProvider.otherwise("/home");
     $stateProvider
       .state('state1', {
-        templateUrl: 'views/main.html',
-        controller: 'MainCtrl'
+        templateUrl: 'pages/main/main.html',
+        controller: 'AuthController'
       })
       .state('state1.home', {
         url: "/home",
-        templateUrl: 'views/partials/home.html',
-        controller: 'homeController'
+        templateUrl: 'pages/main/home/home.html',
+        controller: 'HomeController'
 
       })
       .state('state1.place', {
         url: "/place",
-        templateUrl: 'views/partials/place.html',
-        controller: 'place'
+        templateUrl: 'pages/main/place/place.html',
+        controller: 'PlaceController'
 
       })
       .state('state1.events', {
         url: "/events",
-        templateUrl: 'views/partials/events.html',
-        controller: 'MainCtrl'
+        templateUrl: 'pages/main/events/events.html',
+        controller: 'AuthController'
       })
       .state('state1.discussion', {
         url: "/discussion",
-        templateUrl: 'views/partials/discussion.html',
-        controller: 'MainCtrl'
+        templateUrl: 'pages/main/discussion/discussion.html',
+        controller: 'AuthController'
       })
       .state('state1.reviews', {
         url: "/reviews",
         templateUrl: 'views/partials/reviews.html',
-        controller: 'MainCtrl'
+        controller: 'AuthController'
       })
       .state('state1.placeOne', {
         url: '/place/:id',
-        templateUrl: 'views/partials/place/place.html',
-        controller: 'placeId'
+        templateUrl: 'pages/main/place/place-item/place.html',
+        controller: 'PlaceItemController'
       })
       .state('state2', {
         url: "/in",
-        templateUrl: 'views/in.html',
-        controller: 'MainCtrl',
+        templateUrl: 'pages/auth/auth.html',
+        controller: 'AuthController',
         reload: true,
         inherit: false
       })
       .state('state3', {
         url: "/reg",
-        templateUrl: 'views/reg.html',
-        controller: 'MainCtrl'
+        templateUrl: 'pages/registration/reg.html',
+        controller: 'AuthController'
       })
       .state('state1.settings', {
         url: "/settings",
-        templateUrl: 'views/settings.html',
-        controller: 'settingsController'
+        templateUrl: 'pages/user-settings/settings.html',
+        controller: 'SettingsController'
       })
       .state('state1.myReviews', {
         url: "/my-reviews",
-        templateUrl: 'views/myReviews.html',
-        controller: 'myReviewsController'
+        templateUrl: 'pages/user-reviews/reviews.html',
+        controller: 'MyReviewsController'
       })
   }])
   .config(['$resourceProvider', function ($resourceProvider) {

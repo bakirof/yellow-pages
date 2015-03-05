@@ -20,16 +20,14 @@
   <link rel="stylesheet" href="components/styles/main.css">
   <!-- endbuild -->
 </head>
-<body ng-app="app" data-ng-controller="MainCtrl">
+<body ng-app="app" data-ng-controller="AuthController">
 <!--[if lt IE 7]>
 <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade
   your browser</a> to improve your experience.</p>
 <![endif]-->
 
 <!-- Add your site or application content here -->
-<div id="map">
-
-</div>
+<div id="map"></div>
 <div class="header">
   <div class="navbar navbar-default" role="navigation">
     <div class="container">
@@ -91,27 +89,27 @@
 <script src="components/services/services.js"></script>
 <script src="pages/auth/auth.js"></script>
 <script src="scripts/controllers/about.js"></script>
-<script src="pages/place/place.js"></script>
-<script src="pages/place-item/placeId.js"></script>
-<script src="pages/home/homeController.js"></script>
-<script src="components/place/likeController.js"></script>
+<script src="pages/main/place/place.controller.js"></script>
+<script src="pages/main/place/place-item/place-item.controller.js"></script>
+<script src="pages/main/home/home.controller.js"></script>
+<script src="components/main/place/likeController.js"></script>
 <script src="pages/registration/regController.js"></script>
-<script src="components/place-item/formPlaceId.js"></script>
-<script src="pages/user-settings/settingsController.js"></script>
-<script src="components/place-item/placeIdController.js"></script>
-<script src="pages/user-settings/settingsGroupController.js"></script>
-<script src="pages/user-reviews/myReviewsController.js"></script>
+<script src="components/main/place/place-item/formPlaceId.js"></script>
+<script src="pages/user-settings/user-settings.controller.js"></script>
+<script src="components/main/place/place-item/placeIdController.js"></script>
+<script src="pages/user-settings/user-settings-group.controller.js"></script>
+<script src="pages/user-reviews/user-reviews.controller.js"></script>
 <script src="components/review/myReviewsCtrl.js"></script>
 <script src="components/review/myRwDirController.js"></script>
 <script src="components/user/likePlaceController.js"></script>
 <script src="components/review/itemsLikePlaceController.js"></script>
-<script src="components/place/place-map.js"></script>
-<script src="components/place/like.js"></script>
+<script src="components/main/place/place-map.js"></script>
+<script src="components/main/place/like.js"></script>
 <script src="components/review/myReviewDirective.js"></script>
-<script src="components/place-item/placeDirective.js"></script>
+<script src="components/review/placeDirective.js"></script>
 <script src="components/review/likePlaceDirective.js"></script>
 <script src="components/review/itemsLikePlaceDirective.js"></script>
-<script src="components/place-item/jqueryScripts.js"></script>
+<script src="components/main/place/place-item/jqueryScripts.js"></script>
 <!-- endbuild -->
 </body>
 </html>

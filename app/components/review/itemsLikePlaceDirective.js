@@ -1,7 +1,7 @@
 angular.module('app').directive('itemsLikePlace', function () {
   return {
     restrict: "E",
-    templateUrl: "views/partials/like/itemsLikePlace.html",
+    templateUrl: "components/review/itemsLikePlace.html",
     controller:"itemsLikePlaceController"
   }
 
