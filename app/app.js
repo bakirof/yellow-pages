@@ -54,9 +54,9 @@ angular
         templateUrl: 'views/partials/reviews.html',
         controller: 'AuthController'
       })
-      .state('state1.placeOne', {
+      .state('state1.place-item', {
         url: '/place/:id',
-        templateUrl: 'pages/main/place/place-item/place.html',
+        templateUrl: 'pages/main/place/place-item/place-item.html',
         controller: 'PlaceItemController'
       })
       .state('state2', {
@@ -79,7 +79,7 @@ angular
       .state('state1.myReviews', {
         url: "/my-reviews",
         templateUrl: 'pages/user-reviews/reviews.html',
-        controller: 'MyReviewsController'
+        controller: 'UserReviewsController'
       })
   }])
   .config(['$resourceProvider', function ($resourceProvider) {

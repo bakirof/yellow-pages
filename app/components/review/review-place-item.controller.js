@@ -1,5 +1,5 @@
 angular.module('app')
-  .controller('placeIdController', ['$scope', 'placeId', '$stateParams', 'userReview',
+  .controller('ReviewPlaceItemController', ['$scope', 'placeId', '$stateParams', 'userReview',
     function ($scope, placeId, $stateParams, userReview) {
 
       $scope.uId = $scope.comment.userId;

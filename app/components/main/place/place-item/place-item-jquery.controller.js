@@ -1,5 +1,5 @@
 angular.module('app')
-  .controller('jqueryController', function () {
+  .controller('PlaceItemJqueryController', function () {
 
     $(document).ready(function () {
       $('.placeId-comment2').hide();

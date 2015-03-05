@@ -1,4 +1,4 @@
-angular.module('app').controller('LikeController', ['$scope', '$rootScope', 'userLike', function ($scope, $rootScope, userLike) {
+angular.module('app').controller('PlacePlaceController', ['$scope', '$rootScope', 'userLike', function ($scope, $rootScope, userLike) {
 if($scope.test[$scope.i]){
   $scope.getLike = userLike.get({id: $scope.test[$scope.i]._id}).$promise.then(function (value) {
     $scope.like = true;

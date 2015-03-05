@@ -1,4 +1,4 @@
-angular.module('app').controller('likePlaceController', ['$scope', 'reviewOut', function ($scope, reviewOut) {
+angular.module('app').controller('ReviewHomeController', ['$scope', 'reviewOut', function ($scope, reviewOut) {
   $scope.reviews = reviewOut.query({idPlace: $scope.count.id}).$promise.then(function (value) {
     $scope.reviews = value;
     $scope.showLimit = true;

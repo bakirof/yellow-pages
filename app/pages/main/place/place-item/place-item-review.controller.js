@@ -1,5 +1,5 @@
 angular.module('app')
-  .controller('formPlaceId', ['$scope', 'placeId', '$stateParams', 'review', 'reviewOut',
+  .controller('PlaceItemReviewController', ['$scope', 'placeId', '$stateParams', 'review', 'reviewOut',
     function ($scope, placeId, $stateParams, review, reviewOut) {
 
       var data = new Date();

@@ -22,13 +22,13 @@
       {{place.description}}
     </div>
   </div>
-  <place-map></place-map>
+  <place-map-directive></place-map-directive>
   <div class="col-xs-12 placeId-reviews">
     <div class="col-xs-12 placeId-reviews-all">
       <div class="col-xs-3 placeId-reviews-text">
         Отзывы
       </div>
-      <div class="col-xs-6 col-xs-offset-3 placeId-reviews-button ng-hide" ng-controller='jqueryController'
+      <div class="col-xs-6 col-xs-offset-3 placeId-reviews-button ng-hide" ng-controller='PlaceItemJqueryController'
            data-ng-show="au" id="addReview">
         Добавить свой отзыв
       </div>
@@ -37,7 +37,7 @@
   </div>
 
   <div class="col-xs-12 placeId-comment2" data-ng-show="au">
-    <form name="userAddReview" data-ng-controller="formPlaceId" class="userAddReview">
+    <form name="userAddReview" data-ng-controller="PlaceItemReviewController" class="userAddReview">
       <img class="col-xs-2 img-responsive" ng-src="{{test[i].userImage}}">
 
       <div class="col-xs-10 placeId-review-person">{{test[i].userName}}</div>
@@ -67,7 +67,7 @@
 
 
   <div class="col-xs-12 placeId-comment" data-ng-repeat="comment in reviews">
-    <place-directive></place-directive>
+    <review-place-item-directive></review-place-item-directive>
 
   </div>
 
